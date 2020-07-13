@@ -1,3 +1,6 @@
+<header>
+    <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
+</header>
 <section>
     <mw-media-item 
         *ngFor="let mediaItem of mediaItems"
